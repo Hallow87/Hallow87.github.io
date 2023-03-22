@@ -10,8 +10,16 @@ var person = {
     country: country
 }
 
+
 alert(JSON.stringify(person));
 
 console.log(person);
 
-var test = document.getElementById('test');
+
+
+var test = document.getElementById('hhhh');
+var oldText = test.innerHTML;
+test.innerHTML = "<u>hello</u> world";
+
+const myElement = document.getElementById("hhhh");
+myElement.style.color = "red";
