@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title id="jennimikspitaakiusata"> nun yet </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <!-- Button -->
+  <button id="myBtn">activate prompt</button>
+  <!-- Headerit ja leipäteksti -->
+    <h1> headeri 1 </h1>
+    <h2> headeri 2 </h2>
+    <h3> headeri3 </h3>
+  <p>pakollista leipätekstiä</p>
+  <!-- Javascript -->
+  <script>
+    //buttonista variable
+  var btn = document.getElementById("myBtn")
+    //tehdään functio joka ottaa promptilla user inputin ja hakee titlen, joka voidaan heti muuttaa innerHTML, vastaamaan tehtävänantoa
+  btn.onclick = function() {
+    var titleInput = prompt("title input");
+    var title = document.getElementById("jennimikspitaakiusata").innerHTML = titleInput
+    console.log("btn activated") //Debugging
+  }
+  </script>

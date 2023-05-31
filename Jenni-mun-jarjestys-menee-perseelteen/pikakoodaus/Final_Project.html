@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* CSS rule for the hover effect */
+    .hover-effect {
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+    
+    /* CSS rule for the hover effect on hover state */
+    .hover-effect:hover {
+      transform: scale(1.5);
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- The heading -->
+    <h1 id="headeri">Javascript</h1>  
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Get the heading element by its id
+    const header = document.getElementById('headeri');
+    // Split the text of the heading into an array of letters
+    const letters = header.innerText.split('');
+    // Clear the content of the heading
+    header.innerHTML = '';
+    // Iterate over each letter and create a span element with the hover effect class
+    letters.forEach((letter) => {
+      const span = document.createElement('span');
+      span.textContent = letter;
+      span.classList.add('hover-effect');
+      header.appendChild(span);
+    });
+  </script>
+</body>
+</html>

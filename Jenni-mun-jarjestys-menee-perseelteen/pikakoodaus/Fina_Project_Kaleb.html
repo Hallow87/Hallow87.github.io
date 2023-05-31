@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* CSS rule for the hover effect */
+    .hover-effect {
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+    
+    /* CSS rule for the hover effect on hover state */
+    .hover-effect:hover {
+      transform: scale(1.5);
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Container for the heading -->
+    <h1 id="headeri">Javascript</h1>
+  </div>
+
+  <!-- JavaScript and Bootstrap script inclusion -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    const h1 = document.querySelector("h1")
+    const text = h1.innerText.split('')
+    let html = ("")
+
+    letters.forEach(letter => {
+      html = html + "<span class=''>l></span>"
+      
+      letters.forEach(letter => {
+        let classes = ''
+        if(letter !== ' ')
+          classes = 'letter js-letter'
+      }
+      html = html + "<span class='${classes}'>${letter}</span>"
+    });
+  </script>
+</body>
+</html>
